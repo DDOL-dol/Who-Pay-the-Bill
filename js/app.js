@@ -42,7 +42,7 @@ createApp({
             data.state = false;
         }
 
-        function onFindAnotherLoser(){
+        function onFindAnotherLoser() {
             const idx = Math.floor(Math.random() * data.names.length);
             data.result = data.names[idx];
         }

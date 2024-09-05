@@ -6,6 +6,10 @@ $secondary-color-hover: rgb(76, 120, 185);
 $third-color: #ccc;
 $third-color-hover: #8f8f8f;
 
+
+body{
+    background-color: rgb(255, 218, 224);;
+}
 .main-container {
     display: flex;
     justify-content: center;
@@ -93,13 +97,13 @@ $third-color-hover: #8f8f8f;
     }
 
     .end-container {
-        margin-top: 3%;
+        margin-top: 1rem;
         width: 40%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2%;
+        gap: 2rem;
     }
 
     @media (max-width: 1000px) {
@@ -109,8 +113,8 @@ $third-color-hover: #8f8f8f;
     }
 
     .btn-name {
-        margin-top: 2%;
-        padding: 2%;
+        margin-top: 1rem;
+        padding: 1rem;
         border-radius: 10px;
         border: 0;
         font-size: 1.2rem;
@@ -130,8 +134,8 @@ $third-color-hover: #8f8f8f;
     }
 
     .btn-roll {
-        margin-top: 2%;
-        padding: 2%;
+        margin-top: 1rem;
+        padding: 1rem;
         border-radius: 10px;
         border: 0;
         font-size: 1.2rem;

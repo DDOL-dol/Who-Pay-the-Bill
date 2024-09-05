@@ -26,7 +26,7 @@
 <body>
 
     <div id="app">
-        <div v-show="data.state" class="main-container">
+        <div v-show="data.state" class="main-container animate__animated animate__fadeIn">
             <h1>{{ data.title }}</h1>
             <div class="name-adder">
                 <input type="text" v-model="data.inputName" @keydown.enter="onAddName"
@@ -35,13 +35,13 @@
             </div>
             <p v-show="data.error" class="error">{{ data.error }}</p>
             <div class="name-added">
-                <button :class="['btn-name']" v-for="(name, index) in data.names" :key="name"
+                <button :class="['btn-name animate__animated animate__fadeIn']" v-for="(name, index) in data.names" :key="name"
                     @click="onRemoveName(name)">{{ name }}</button>
             </div>
             <button v-show="canRoll" class="btn-roll" @click="onFindLoser">Find the loser</button>
         </div>
 
-        <div v-show="!data.state" class="main-container">
+        <div v-show="!data.state" class="main-container animate__animated animate__fadeIn">
             <h1>The loser is: {{ data.result }}</h1>
             <div class="end-container">
                 <button class="btn-name" @click="onRestart">Restart</button>
