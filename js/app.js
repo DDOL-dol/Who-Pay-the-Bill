@@ -19,7 +19,7 @@ createApp({
                 data.error = 'You don\'t input the name!'
                 console.log(data.error);
             } else if (data.names.includes(data.inputName)) {
-                data.error = 'You have inputted duplicated name!'
+                data.error = 'You entered a duplicate name!'
                 console.log(data.error);
             } else {
                 data.error = '';

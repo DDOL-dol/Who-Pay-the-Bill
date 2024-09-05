@@ -1,6 +1,6 @@
 $title-font-size: 4rem;
 $primary-color: rgb(212, 85, 107);
-$primary-color-hover:  rgb(179, 72, 90);
+$primary-color-hover: rgb(179, 72, 90);
 $secondary-color: rgb(94, 148, 230);
 $secondary-color-hover: rgb(76, 120, 185);
 $third-color: #ccc;
@@ -21,6 +21,12 @@ $third-color-hover: #8f8f8f;
         font-size: $title-font-size;
         color: $primary-color;
         border-bottom: 8px solid $secondary-color;
+    }
+
+    @media (max-width: 1000px) {
+        h1 {
+            width: 80%;
+        }
     }
 
     .name-adder {
@@ -59,6 +65,12 @@ $third-color-hover: #8f8f8f;
             background-color: $secondary-color;
         }
     }
+    @media (max-width: 1000px) {
+        .name-adder {
+            width: 80%;
+        }
+    }
+
 
     .error {
         color: $primary-color;
@@ -74,7 +86,13 @@ $third-color-hover: #8f8f8f;
         gap: 2%;
     }
 
-    .end-container{
+    @media (max-width: 1000px) {
+        .name-added {
+            width: 80%;
+        }
+    }
+
+    .end-container {
         margin-top: 3%;
         width: 40%;
         display: flex;
@@ -83,7 +101,13 @@ $third-color-hover: #8f8f8f;
         justify-content: center;
         gap: 2%;
     }
-    
+
+    @media (max-width: 1000px) {
+        .end-container {
+            width: 80%;
+        }
+    }
+
     .btn-name {
         margin-top: 2%;
         padding: 2%;
@@ -105,7 +129,7 @@ $third-color-hover: #8f8f8f;
         background-color: $third-color;
     }
 
-    .btn-roll{
+    .btn-roll {
         margin-top: 2%;
         padding: 2%;
         border-radius: 10px;

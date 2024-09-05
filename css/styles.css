@@ -14,6 +14,11 @@
   color: rgb(212, 85, 107);
   border-bottom: 8px solid rgb(94, 148, 230);
 }
+@media (max-width: 1000px) {
+  .main-container h1 {
+    width: 80%;
+  }
+}
 .main-container .name-adder {
   width: 40%;
   display: flex;
@@ -46,6 +51,11 @@
 .main-container .name-adder .btn-add:active {
   background-color: rgb(94, 148, 230);
 }
+@media (max-width: 1000px) {
+  .main-container .name-adder {
+    width: 80%;
+  }
+}
 .main-container .error {
   color: rgb(212, 85, 107);
 }
@@ -58,6 +68,11 @@
   justify-content: flex-start;
   gap: 2%;
 }
+@media (max-width: 1000px) {
+  .main-container .name-added {
+    width: 80%;
+  }
+}
 .main-container .end-container {
   margin-top: 3%;
   width: 40%;
@@ -66,6 +81,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2%;
+}
+@media (max-width: 1000px) {
+  .main-container .end-container {
+    width: 80%;
+  }
 }
 .main-container .btn-name {
   margin-top: 2%;
